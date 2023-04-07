@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HotelProject.DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230407154925_mig1")]
+    [Migration("20230407163502_mig1")]
     partial class mig1
     {
         /// <inheritdoc />
