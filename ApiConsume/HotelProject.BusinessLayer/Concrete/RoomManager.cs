@@ -15,7 +15,7 @@ namespace HotelProject.BusinessLayer.Concrete
 
         public RoomManager(IRoomDal roomDal)
         {
-            this._roomDal = roomDal;
+            _roomDal = roomDal;
         }
 
         public void TDelete(Room t)
