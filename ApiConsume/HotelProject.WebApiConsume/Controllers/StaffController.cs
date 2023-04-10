@@ -19,31 +19,32 @@ namespace HotelProject.WebApiConsume.Controllers
         [HttpGet]
         public IActionResult StaffList()
         {
-            var values=_staffService.TGetList();    
+            var values = _staffService.TGetList();
             return Ok(values);
         }
         [HttpPost]
         public IActionResult AddStaff(Staff staff)
         {
-            _staffService.TInsert(staff);   
+            _staffService.TInsert(staff);
             return Ok();
         }
         [HttpDelete]
         public IActionResult DeleteStaff(int id)
-        { var values=_staffService.TGetByID(id);
+        {
+            var values = _staffService.TGetByID(id);
             _staffService.TDelete(values);
             return Ok();
         }
         [HttpPut]
         public IActionResult UpdateStaff(Staff staff)
         {
-            _staffService.TUpdate(staff);   
+            _staffService.TUpdate(staff);
             return Ok();
         }
         [HttpGet("{id}")]
         public IActionResult GetStaff(int id)
         {
-            var values=_staffService.TGetByID(id);
+            var values = _staffService.TGetByID(id);
             return Ok(values);
         }
 
