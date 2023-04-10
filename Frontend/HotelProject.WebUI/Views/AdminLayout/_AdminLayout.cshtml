@@ -413,6 +413,8 @@
                         <div class="card">
                             <div class="card-body">
                                 @RenderBody()
+                                <br/>
+                                @await Html.PartialAsync("/Views/AdminLayout/HeadPartial.cshtml")
                         </div>
                     </div>
                 </div>
